@@ -34,6 +34,16 @@
     });
   });
 
+  // Theme toggle (persisted in localStorage; anti-flash script in each page head)
+  var root = document.documentElement;
+  document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  });
+
   // Close on Escape
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {

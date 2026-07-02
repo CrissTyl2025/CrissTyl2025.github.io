@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Place Holder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Place Holder<span>.</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <div class="has-dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Hobbies <span class="caret">▼</span></button>
+        <div class="dropdown">
+          <a href="music.html"><span class="dot dot-purple"></span>Music</a>
+          <a href="rock-collecting.html"><span class="dot dot-orange"></span>Rock Collecting</a>
+          <a href="houseplants.html"><span class="dot dot-amber"></span>Houseplants</a>
+        </div>
+      </div>
+      <a class="btn-outline" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <div class="index">06 — Contact</div>
+      <h1>Get in touch</h1>
+      <p class="desc">The best ways to reach me. I'm happy to talk about research collaborations, data, or plants.</p>
+      <div class="accent-rule"></div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Direct links -->
+      <div>
+        <div class="section-label" style="margin-top:0;">Direct</div>
+        <ul class="contact-links">
+          <li><a href="mailto:you@wisc.edu"><span class="k">EMAIL</span> you@wisc.edu</a></li>
+          <li><a href="#"><span class="k">SCHOLAR</span> Google Scholar</a></li>
+          <li><a href="#"><span class="k">GITHUB</span> github.com/username</a></li>
+          <li><a href="#"><span class="k">LINKEDIN</span> linkedin.com/in/username</a></li>
+          <li><a href="#"><span class="k">OFFICE</span> Engineering Hall, UW–Madison</a></li>
+        </ul>
+      </div>
+
+      <!-- Message form template.
+           Static HTML can't send email on its own. To make this work, point the
+           form at a service like Formspree — set action="https://formspree.io/f/XXXX"
+           and method="POST". Otherwise delete this column and keep the links. -->
+      <div>
+        <div class="section-label" style="margin-top:0;">Send a message</div>
+        <form action="#" method="POST">
+          <div class="field">
+            <label for="name">NAME</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">EMAIL</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="msg">MESSAGE</label>
+            <textarea id="msg" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-dark" type="submit" style="border:0;cursor:pointer;">Send →</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="palette-row"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span><span class="p5"></span></div>
+    <div>© 2026 Place Holder · University of Wisconsin–Madison</div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

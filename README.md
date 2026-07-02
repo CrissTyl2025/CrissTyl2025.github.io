@@ -27,12 +27,15 @@ site/
 
 - **Name:** find/replace `Place Holder` across the `.html` files.
 - **Affiliation / status:** edit the `.meta` block and footer in each page.
-- **Portrait:** on `index.html`, give the `.portrait` div a background image:
-  `<div class="portrait" style="background-image:url('images/portrait.jpg')">`.
+- **Portrait:** on `index.html`, give the `.portrait-frame` div a background image:
+  `<div class="portrait-frame" style="background-image:url('images/portrait.jpg')">`.
   The striped pattern is just the fallback.
 - **CV:** put `CV.pdf` in a `files/` folder (the Download CV button links to `files/CV.pdf`).
 - **Colors:** all palette values live at the top of `styles.css` under `:root`.
   `--accent` is the primary interactive color (currently magenta).
+- **Dark mode:** the ☾/☀ button in the header toggles it; the choice is saved in
+  `localStorage` and applied on every page (no flash on load). Dark palette values
+  live under `:root[data-theme="dark"]` in `styles.css`.
 - **Content:** every template has `<!-- TEMPLATE -->` comments showing what to
   duplicate (cards, publication rows, gallery photos).
 - **Contact form:** static HTML can't email on its own. Point the form at

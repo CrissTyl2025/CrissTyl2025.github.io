@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Holder — Bioprocess Engineering × Machine Learning</title>
+  <meta name="description" content="Place Holder, PhD candidate at the University of Wisconsin–Madison, working at the intersection of bioprocess engineering and machine learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+  <!-- ===== HEADER (identical on every page; update aria-current) ===== -->
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Place Holder<span>.</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <div class="has-dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Hobbies <span class="caret">▼</span></button>
+        <div class="dropdown">
+          <a href="music.html"><span class="dot dot-purple"></span>Music</a>
+          <a href="rock-collecting.html"><span class="dot dot-orange"></span>Rock Collecting</a>
+          <a href="houseplants.html"><span class="dot dot-amber"></span>Houseplants</a>
+        </div>
+      </div>
+      <a class="btn-outline" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HOME (single screen) ===== -->
+  <main class="home-main">
+    <div class="home-copy">
+      <div class="eyebrow">01 — PhD Candidate</div>
+      <h1>Place<br>Holder</h1>
+      <p class="lede">At the intersection of bioprocess engineering and machine learning.</p>
+
+      <div class="palette-row"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span><span class="p5"></span></div>
+
+      <div class="meta">
+        <div><div class="k">FOCUS</div><div class="v">Bioprocess × ML</div></div>
+        <div><div class="k">AFFILIATION</div><div class="v">UW–Madison · Paulson Group</div></div>
+        <div><div class="k">STATUS</div><div class="v">Open to collaborate</div></div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-dark" href="research.html">View research →</a>
+        <a class="btn btn-ghost" href="files/CV.pdf">Download CV</a>
+      </div>
+    </div>
+
+    <!-- Portrait: swap the placeholder for a real photo by giving .portrait a
+         background-image, e.g.  style="background-image:url('images/portrait.jpg')"
+         (keep it; the striped pattern is just the fallback). -->
+    <div class="portrait">
+      <div class="bar"></div>
+      <div class="ph-note">portrait</div>
+    </div>
+  </main>
+
+  <script src="nav.js"></script>
+</body>
+</html>
